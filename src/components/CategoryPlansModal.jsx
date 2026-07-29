@@ -45,7 +45,7 @@ export default function CategoryPlansModal({ isOpen, onClose, categoryData }) {
             {/* Header */}
             <div className="flex items-center justify-between px-8 py-6 border-b border-white/5 bg-white/[0.02]">
               <div>
-                <p className="text-[10px] uppercase tracking-[0.4em] text-orange-500/50 mb-1">
+                <p className="text-[10px] uppercase tracking-[0.4em] text-red-500/50 mb-1">
                   Floor Plan Explorer
                 </p>
                 <h3 className="text-2xl md:text-3xl font-light text-white tracking-tight">
@@ -70,11 +70,11 @@ export default function CategoryPlansModal({ isOpen, onClose, categoryData }) {
                       onClick={() => setActiveUnit(unit)}
                       className={`flex-1 lg:flex-none p-4 rounded-2xl border transition-all text-left flex flex-col gap-2 group
                         ${activeUnit === unit 
-                          ? "bg-orange-500/10 border-orange-500/40" 
+                          ? "bg-red-500/10 border-red-500/40" 
                           : "bg-white/2 border-white/5 hover:border-white/20"}`}
                     >
                       <span className={`text-[10px] uppercase tracking-[0.2em] font-bold
-                        ${activeUnit === unit ? "text-orange-500" : "text-white/40 group-hover:text-white/60"}`}>
+                        ${activeUnit === unit ? "text-red-500" : "text-white/40 group-hover:text-white/60"}`}>
                         Type {idx + 1 < 10 ? `0${idx + 1}` : idx + 1}
                       </span>
                       <div className="aspect-[4/3] rounded-lg bg-white/5 overflow-hidden p-2">
@@ -91,17 +91,17 @@ export default function CategoryPlansModal({ isOpen, onClose, categoryData }) {
                   <>
                     {/* Zoom Controls Overlay */}
                     <div className="absolute top-6 left-1/2 -translate-x-1/2 z-10 flex items-center gap-3 bg-black/60 backdrop-blur-md border border-white/10 rounded-full px-4 py-1.5">
-                      <button onClick={handleZoomOut} className="p-2 hover:text-orange-500 transition-colors">
+                      <button onClick={handleZoomOut} className="p-2 hover:text-red-500 transition-colors">
                         <ZoomOut size={18} />
                       </button>
                       <span className="text-[10px] uppercase tracking-[0.1em] text-white/40 w-10 text-center font-mono">
                         {Math.round(zoom * 100)}%
                       </span>
-                      <button onClick={handleZoomIn} className="p-2 hover:text-orange-500 transition-colors">
+                      <button onClick={handleZoomIn} className="p-2 hover:text-red-500 transition-colors">
                         <ZoomIn size={18} />
                       </button>
                       <div className="w-px h-3 bg-white/10" />
-                      <button onClick={handleReset} className="p-2 hover:text-orange-500 transition-colors">
+                      <button onClick={handleReset} className="p-2 hover:text-red-500 transition-colors">
                         <RotateCcw size={16} />
                       </button>
                     </div>
@@ -127,9 +127,9 @@ export default function CategoryPlansModal({ isOpen, onClose, categoryData }) {
                           const el = document.getElementById("inquiry");
                           if (el) el.scrollIntoView({ behavior: "smooth" });
                         }}
-                        className="px-12 py-4 bg-orange-500 text-white rounded-2xl text-[11px] uppercase
-                                   tracking-[0.32em] font-bold hover:bg-orange-600 transition-all
-                                   shadow-[0_0_30px_rgba(255,87,34,0.25)]"
+                        className="px-12 py-4 bg-red-500 text-white rounded-2xl text-[11px] uppercase
+                                   tracking-[0.32em] font-bold hover:bg-red-600 transition-all
+                                   shadow-[0_0_30px_rgba(239,68,68,0.25)]"
                       >
                         Register Interest
                       </button>

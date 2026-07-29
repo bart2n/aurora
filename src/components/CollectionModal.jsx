@@ -35,19 +35,19 @@ export default function CollectionModal({ isOpen, onClose, collection }) {
 
             <div className="flex flex-col">
               <div className="mb-8">
-                <p className="text-[11px] uppercase tracking-[0.4em] text-orange-500/50 mb-2">
+                <p className="text-[11px] uppercase tracking-[0.4em] text-red-500/50 mb-2">
                   {collection.tower}
                 </p>
                 <h3 className="text-3xl md:text-4xl font-light text-white tracking-tight leading-tight mb-2">
                   {collection.name}
                 </h3>
-                <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-orange-500/5 border border-orange-500/20 text-[11px] uppercase tracking-[0.26em] text-orange-500">
-                  <span className="w-1.5 h-1.5 rounded-full bg-orange-500" />
+                <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-red-500/5 border border-red-500/20 text-[11px] uppercase tracking-[0.26em] text-red-500">
+                  <span className="w-1.5 h-1.5 rounded-full bg-red-500" />
                   {collection.highlight}
                 </span>
               </div>
 
-              <p className="text-[11px] uppercase tracking-[0.4em] text-orange-500/50 mb-4">
+              <p className="text-[11px] uppercase tracking-[0.4em] text-red-500/50 mb-4">
                 Project Facts
               </p>
 
@@ -62,14 +62,14 @@ export default function CollectionModal({ isOpen, onClose, collection }) {
                 </div>
                 <div className="rounded-2xl bg-white/4 border border-white/15 p-4">
                   <p className="text-[10px] uppercase tracking-[0.28em] text-white/45 mb-1.5">
-                    Plot Area
+                    Location
                   </p>
                   <p className="text-sm md:text-base font-light text-white/95">
                     {collection.facts.plot}
                   </p>
                 </div>
-                <div className="rounded-2xl bg-white/4 border border-orange-500/30 p-4">
-                  <p className="text-[10px] uppercase tracking-[0.28em] text-orange-500/60 mb-1.5">
+                <div className="rounded-2xl bg-white/4 border border-red-500/30 p-4">
+                  <p className="text-[10px] uppercase tracking-[0.28em] text-red-500/60 mb-1.5">
                     Total Units
                   </p>
                   <p className="text-2xl font-semibold text-white">
@@ -96,7 +96,7 @@ export default function CollectionModal({ isOpen, onClose, collection }) {
               </div>
 
               <div className="mb-8">
-                <p className="text-[10px] uppercase tracking-[0.3em] text-orange-500/50 mb-3">
+                <p className="text-[10px] uppercase tracking-[0.3em] text-red-500/50 mb-3">
                   Unit Distribution
                 </p>
                 <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
@@ -114,9 +114,9 @@ export default function CollectionModal({ isOpen, onClose, collection }) {
                       return (
                         <div
                           key={key}
-                          className="rounded-2xl bg-orange-500/5 border border-orange-500/16 px-3.5 py-3 flex flex-col gap-1"
+                          className="rounded-2xl bg-red-500/5 border border-red-500/16 px-3.5 py-3 flex flex-col gap-1"
                         >
-                          <span className="text-[10px] uppercase tracking-[0.24em] text-orange-500/60">
+                          <span className="text-[10px] uppercase tracking-[0.24em] text-red-500/60">
                             {label}
                           </span>
                           <span className="text-xl font-semibold text-white">
@@ -136,9 +136,9 @@ export default function CollectionModal({ isOpen, onClose, collection }) {
                     const el = document.getElementById("inquiry");
                     if (el) el.scrollIntoView({ behavior: "smooth" });
                   }}
-                  className="flex-1 py-4 bg-orange-500 text-white rounded-2xl text-[11px] uppercase
-                             tracking-[0.32em] font-bold hover:bg-orange-600 transition-all
-                             shadow-[0_0_30px_rgba(255,87,34,0.25)]"
+                  className="flex-1 py-4 bg-red-500 text-white rounded-2xl text-[11px] uppercase
+                             tracking-[0.32em] font-bold hover:bg-red-600 transition-all
+                             shadow-[0_0_30px_rgba(239,68,68,0.25)]"
                 >
                   Register Interest
                 </button>

@@ -8,7 +8,7 @@ export default function SectionHeading({ subtitle, title, light = false }) {
         whileInView={{ opacity: 1, letterSpacing: "0.42em", y: 0 }}
         viewport={{ once: true, margin: "-80px" }}
         transition={{ duration: 0.8 }}
-        className={`text-[10px] uppercase font-light mb-4 ${light ? "text-orange-500/80" : "text-orange-500"
+        className={`text-[10px] uppercase font-light mb-4 ${light ? "text-red-500/80" : "text-red-500"
           }`}
       >
         {subtitle}

@@ -21,7 +21,7 @@ export default function Navbar({
               initial={{ rotate: -180, opacity: 0, scale: 0.8 }}
               animate={{ rotate: 0, opacity: 1, scale: 1 }}
               transition={{ duration: 1 }}
-              className="w-12 h-12 border border-orange-500/30 rounded-full flex items-center justify-center shadow-[0_0_20px_rgba(255,87,34,0.2)] overflow-hidden bg-white/5"
+              className="w-12 h-12 border border-red-500/30 rounded-full flex items-center justify-center shadow-[0_0_20px_rgba(239,68,68,0.2)] overflow-hidden bg-white/5"
             >
               <img
                 src={`${import.meta.env.BASE_URL}logo.jpg`}
@@ -33,8 +33,8 @@ export default function Navbar({
               <span className="text-sm md:text-xl font-semibold tracking-[0.35em] uppercase">
                 DP REAL ESTATE
               </span>
-              <span className="text-[10px] tracking-[0.35em] uppercase text-orange-500">
-                Skyflame | Majan
+              <span className="text-[10px] tracking-[0.35em] uppercase text-red-500">
+                Aurora | JVC
               </span>
             </div>
           </div>
@@ -43,14 +43,14 @@ export default function Navbar({
               <button
                 key={item}
                 onClick={() => scrollToSection(item.toLowerCase())}
-                className="text-[11px] uppercase tracking-[0.3em] font-medium text-white/60 hover:text-orange-500 transition-colors"
+                className="text-[11px] uppercase tracking-[0.3em] font-medium text-white/60 hover:text-red-500 transition-colors"
               >
                 {item}
               </button>
             ))}
             <button
               onClick={() => scrollToSection("inquiry")}
-              className="px-6 py-2.5 bg-orange-500 text-white text-[11px] uppercase tracking-[0.35em] font-bold rounded-full hover:bg-orange-600 transition-all shadow-[0_0_25px_rgba(255,87,34,0.35)]"
+              className="px-6 py-2.5 bg-red-500 text-white text-[11px] uppercase tracking-[0.35em] font-bold rounded-full hover:bg-red-600 transition-all shadow-[0_0_25px_rgba(239,68,68,0.35)]"
             >
               Register Interest
             </button>
@@ -98,7 +98,7 @@ export default function Navbar({
                       scrollToSection(item.toLowerCase());
                       setMobileMenuOpen(false);
                     }}
-                    className="text-sm text-left uppercase tracking-[0.25em] text-white/70 hover:text-orange-500 py-2"
+                    className="text-sm text-left uppercase tracking-[0.25em] text-white/70 hover:text-red-500 py-2"
                   >
                     {item === "inquiry" ? "Register Interest" : item}
                   </button>

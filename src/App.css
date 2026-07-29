@@ -2,7 +2,7 @@
 
 :root {
   color-scheme: dark;
-  --binghatti-orange: #FF5722;
+  --binghatti-red: #EF4444;
   --binghatti-bronze: #A97142;
   --deep-black: #0A0A0A;
 }
@@ -69,12 +69,12 @@ iframe {
   border-color: var(--binghatti-bronze);
 }
 
-.text-orange {
-  color: var(--binghatti-orange);
+.text-red {
+  color: var(--binghatti-red);
 }
 
-.bg-orange {
-  background-color: var(--binghatti-orange);
+.bg-red {
+  background-color: var(--binghatti-red);
 }
 
 .bronze-glow {
@@ -85,12 +85,12 @@ iframe {
   box-shadow: 0 0 60px rgba(169, 113, 66, 0.25);
 }
 
-.orange-glow {
-  box-shadow: 0 0 40px rgba(255, 87, 34, 0.15);
+.red-glow {
+  box-shadow: 0 0 40px rgba(239, 68, 68, 0.15);
 }
 
-.orange-glow-hover:hover {
-  box-shadow: 0 0 60px rgba(255, 87, 34, 0.25);
+.red-glow-hover:hover {
+  box-shadow: 0 0 60px rgba(239, 68, 68, 0.25);
 }
 
 .custom-scrollbar::-webkit-scrollbar {

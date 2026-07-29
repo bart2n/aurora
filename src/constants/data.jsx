@@ -1,10 +1,10 @@
 import {
-  Zap,
-  Award,
-  Activity,
   Waves,
+  Dumbbell,
+  Baby,
   ShieldCheck,
-  Car
+  Sparkles,
+  MapPin
 } from "lucide-react";
 
 export const contactInfo = {
@@ -15,73 +15,42 @@ export const contactInfo = {
 };
 
 export const amenities = [
-  { icon: <Zap size={20} />, label: "Solar Photovoltaic" },
-  { icon: <Award size={20} />, label: "LEED Certification" },
-  { icon: <Activity size={20} />, label: "Skyline Jogging Path" },
-  { icon: <Waves size={20} />, label: "Sky Infinity Pool" },
-  { icon: <ShieldCheck size={20} />, label: "Smart System" },
-  { icon: <Car size={20} />, label: "Valet Service" }
+  { icon: <Waves size={20} />, label: "Infinity Pool" },
+  { icon: <Dumbbell size={20} />, label: "State-of-the-Art Gym" },
+  { icon: <Baby size={20} />, label: "Kids' Play Area" },
+  { icon: <ShieldCheck size={20} />, label: "24/7 Security" },
+  { icon: <Sparkles size={20} />, label: "Premium Finishes" },
+  { icon: <MapPin size={20} />, label: "Prime JVC Connectivity" }
 ];
 
 export const heroImages = [
-  `${import.meta.env.BASE_URL}bg1.jpg`,
-  `${import.meta.env.BASE_URL}bg2.jpg`,
+  `${import.meta.env.BASE_URL}bg1.png`,
+  `${import.meta.env.BASE_URL}bg2.png`,
   `${import.meta.env.BASE_URL}bg3.jpg`,
   `${import.meta.env.BASE_URL}bg4.jpg`,
   `${import.meta.env.BASE_URL}bg5.jpg`,
-  `${import.meta.env.BASE_URL}bg6.jpg`,
-  `${import.meta.env.BASE_URL}bg7.jpg`,
-  `${import.meta.env.BASE_URL}bg8.jpg`,
-  `${import.meta.env.BASE_URL}bg9.jpg`,
-  `${import.meta.env.BASE_URL}bg10.jpg`
 ];
 
 export const mergedGallery = heroImages;
 
 export const collections = [
   {
-    id: "tower-1",
-    name: "Skyflame Tower 1",
-    tower: "Signature Residence",
-    units: "1,378",
-    floors: "27 Residential",
-    area: "16,460.26 SQM",
+    id: "aurora",
+    name: "Binghatti Aurora",
+    tower: "Boutique Residence",
+    units: "275",
+    floors: "5 Residential",
+    area: "District 12, JVC",
     image: `${import.meta.env.BASE_URL}bg1.jpg`,
-    highlight: "The Shape of Mastery",
+    highlight: "Luxury Flows Effortlessly Here",
     facts: {
-      type: "Residential & Retails",
-      plot: "16,460.26 SQM / 177,176.76 SQFT",
-      levels:
-        "Ground Floor + 5 Parking Floors + 27 Residential Floors + Mechanical Floors + Roof",
+      type: "Residential",
+      plot: "District 12, Jumeirah Village Circle, Dubai",
+      levels: "Ground Floor + 5 Residential Floors + Roof",
       units: {
-        studio: 584,
-        bed1: 741,
-        bed2: 52,
-        bed4: 1,
-        shops: 29
-      }
-    },
-    gallery: mergedGallery
-  },
-  {
-    id: "tower-2",
-    name: "Skyflame Tower 2",
-    tower: "Premium Residence",
-    units: "782",
-    floors: "22 Residential",
-    area: "9,251.95 SQM",
-    image: `${import.meta.env.BASE_URL}bg2.jpg`,
-    highlight: "Dual-Tower Excellence",
-    facts: {
-      type: "Residential & Retails",
-      plot: "9,251.95 SQM / 99,587.16 SQFT",
-      levels:
-        "Ground Floor + 5 Parking Floors + 22 Residential Floors + Mechanical Floors + Roof",
-      units: {
-        studio: 406,
-        bed1: 332,
-        bed2: 44,
-        shops: 19
+        studio: 92,
+        bed1: 163,
+        bed2: 20
       }
     },
     gallery: mergedGallery
@@ -93,27 +62,18 @@ export const unitTypes = [
     category: "Studio",
     items: [
       { type: "Type 01", image: `${import.meta.env.BASE_URL}studio1.png` },
-      { type: "Type 02", image: `${import.meta.env.BASE_URL}studio2.png` },
-      { type: "Type 03", image: `${import.meta.env.BASE_URL}studio3.png` },
     ]
   },
   {
     category: "1 Bedroom",
     items: [
       { type: "Type 01", image: `${import.meta.env.BASE_URL}1bedroom1.png` },
-      { type: "Type 02", image: `${import.meta.env.BASE_URL}1bedroom2.png` },
-      { type: "Type 03", image: `${import.meta.env.BASE_URL}1bedroom3.png` },
-      { type: "Type 04", image: `${import.meta.env.BASE_URL}1bedroom4.png` },
-      { type: "Type 05", image: `${import.meta.env.BASE_URL}1bedroom5.png` },
     ]
   },
   {
     category: "2 Bedroom",
     items: [
       { type: "Type 01", image: `${import.meta.env.BASE_URL}2bedroom1.png` },
-      { type: "Type 02", image: `${import.meta.env.BASE_URL}2bedroom2.png` },
-      { type: "Type 03", image: `${import.meta.env.BASE_URL}2bedroom3.png` },
-      { type: "Type 04", image: `${import.meta.env.BASE_URL}2bedroom4.png` },
     ]
   }
 ];

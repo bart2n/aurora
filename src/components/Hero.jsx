@@ -15,9 +15,9 @@ export default function Hero({ heroScale, heroOpacity, heroImages, scrollToSecti
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.5 }}
-          className="text-xs md:text-sm uppercase tracking-[0.5em] text-orange-400 mb-6 drop-shadow-[0_0_16px_rgba(255,87,34,0.35)]"
+          className="text-xs md:text-sm uppercase tracking-[0.5em] text-red-400 mb-6 drop-shadow-[0_0_16px_rgba(239,68,68,0.35)]"
         >
-          The Shape of Mastery
+          Luxury Flows Effortlessly Here
         </motion.p>
         <motion.h1
           initial={{ opacity: 0, y: 30 }}
@@ -25,7 +25,7 @@ export default function Hero({ heroScale, heroOpacity, heroImages, scrollToSecti
           transition={{ delay: 0.7, duration: 1 }}
           className="text-5xl md:text-8xl font-extralight tracking-tight mb-8"
         >
-          BINGHATTI <span className="text-orange-500 italic">SKYFLAME</span>
+          BINGHATTI <span className="text-red-500 italic">AURORA</span>
         </motion.h1>
         <motion.div
           initial={{ opacity: 0 }}
@@ -37,16 +37,16 @@ export default function Hero({ heroScale, heroOpacity, heroImages, scrollToSecti
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.97 }}
             onClick={() => scrollToSection("overview")}
-            className="px-10 py-4 bg-orange-500 text-white text-xs uppercase tracking-[0.35em] font-bold rounded-full shadow-[0_0_30px_rgba(255,87,34,0.35)]"
+            className="px-10 py-4 bg-red-500 text-white text-xs uppercase tracking-[0.35em] font-bold rounded-full shadow-[0_0_30px_rgba(239,68,68,0.35)]"
           >
             Experience Now
           </motion.button>
           <div className="flex items-center gap-4 text-white/60">
-            <div className="h-px w-12 bg-orange-500/30" />
+            <div className="h-px w-12 bg-red-500/30" />
             <span className="text-[10px] uppercase tracking-[0.35em]">
-              Majan | Dubai
+              JVC | Dubai
             </span>
-            <div className="h-px w-12 bg-orange-500/30" />
+            <div className="h-px w-12 bg-red-500/30" />
           </div>
         </motion.div>
       </div>

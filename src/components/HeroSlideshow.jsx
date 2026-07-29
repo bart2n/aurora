@@ -24,7 +24,7 @@ export default function HeroSlideshow({ images }) {
         >
           <img
             src={images[index]}
-            alt="Skyflame Hero"
+            alt="Aurora Hero"
             className="w-full h-full object-cover"
           />
         </motion.div>

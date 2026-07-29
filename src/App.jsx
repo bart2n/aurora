@@ -59,7 +59,7 @@ export default function App() {
   };
 
   return (
-    <div className="bg-black text-white font-sans selection:bg-orange-500 selection:text-white">
+    <div className="bg-black text-white font-sans selection:bg-red-500 selection:text-white">
       <AnimatePresence>
         {notification && (
           <Notification

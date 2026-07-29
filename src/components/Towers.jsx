@@ -12,7 +12,7 @@ export default function Towers({ collections, setSelectedCollection, scrollToSec
       <div className="absolute inset-0 z-0">
         <img
           src={`${import.meta.env.BASE_URL}bg8.jpg`}
-          alt="Dual Towers Background"
+          alt="Aurora Background"
           className="w-full h-full object-cover opacity-20 grayscale"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-black via-transparent to-black" />
@@ -20,7 +20,7 @@ export default function Towers({ collections, setSelectedCollection, scrollToSec
       <div className="max-w-7xl mx-auto px-6 relative z-10">
         <SectionHeading
           subtitle="Architectural Mastery"
-          title="The Dual Residences"
+          title="The Boutique Residence"
         />
         <div className="grid md:grid-cols-2 lg:grid-cols-2 max-w-5xl mx-auto gap-12">
           {collections.map((col, idx) => (
@@ -28,15 +28,15 @@ export default function Towers({ collections, setSelectedCollection, scrollToSec
               <motion.div
                 whileHover={{ y: -6, scale: 1.01 }}
                 transition={{ duration: 0.35 }}
-                className="group relative h-full bg-black/40 backdrop-blur-sm border border-orange-500/12 rounded-[40px] overflow-hidden transition-all duration-700 hover:border-orange-500/40 hover:shadow-[0_0_70px_rgba(255,87,34,0.14)]"
+                className="group relative h-full bg-black/40 backdrop-blur-sm border border-red-500/12 rounded-[40px] overflow-hidden transition-all duration-700 hover:border-red-500/40 hover:shadow-[0_0_70px_rgba(239,68,68,0.14)]"
               >
                 <div className="absolute inset-0 z-0">
                   <motion.img
                     initial={{ scale: 1 }}
                     whileHover={{ scale: 1.08 }}
                     transition={{ duration: 1.1 }}
-                    src={col.image}
-                    alt={col.name}
+
+
                     className="w-full h-full object-cover opacity-35 group-hover:opacity-55 grayscale-[0.2]"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black via-black/85 to-black/20" />
@@ -45,7 +45,7 @@ export default function Towers({ collections, setSelectedCollection, scrollToSec
                 <div className="relative z-10 p-8 md:p-9 flex flex-col h-full min-h-[480px]">
                   <div className="flex justify-between items-start mb-6">
                     <div>
-                      <p className="text-[10px] uppercase tracking-[0.28em] text-orange-500/50 mb-1">
+                      <p className="text-[10px] uppercase tracking-[0.28em] text-red-500/50 mb-1">
                         {col.tower}
                       </p>
                       <h3 className="text-2xl md:text-[26px] font-light tracking-tight leading-snug">
@@ -54,17 +54,17 @@ export default function Towers({ collections, setSelectedCollection, scrollToSec
                     </div>
                     <button
                       onClick={() => setSelectedCollection(col)}
-                      className="p-3 rounded-2xl bg-white/5 border border-white/15 backdrop-blur-md hover:bg-orange-500/10 transition-colors group/btn"
+                      className="p-3 rounded-2xl bg-white/5 border border-white/15 backdrop-blur-md hover:bg-red-500/10 transition-colors group/btn"
                     >
                       <Maximize2
                         size={18}
-                        className="text-white/50 group-hover/btn:text-orange-500 transition-colors"
+                        className="text-white/50 group-hover/btn:text-red-500 transition-colors"
                       />
                     </button>
                   </div>
 
-                  <p className="inline-flex items-center gap-2 text-[11px] text-orange-500 font-medium tracking-[0.22em] mb-8 border border-orange-500/20 rounded-full px-4 py-2 bg-orange-500/5 uppercase">
-                    <span className="w-1.5 h-1.5 rounded-full bg-orange-500/80" />
+                  <p className="inline-flex items-center gap-2 text-[11px] text-red-500 font-medium tracking-[0.22em] mb-8 border border-red-500/20 rounded-full px-4 py-2 bg-red-500/5 uppercase">
+                    <span className="w-1.5 h-1.5 rounded-full bg-red-500/80" />
                     {col.highlight}
                   </p>
 
@@ -87,7 +87,7 @@ export default function Towers({ collections, setSelectedCollection, scrollToSec
                     </div>
                     <div className="space-y-1">
                       <p className="text-[10px] uppercase tracking-[0.26em] text-white/40">
-                        Plot Area
+                        Location
                       </p>
                       <p className="text-sm md:text-base font-medium text-white/90">
                         {col.area}
@@ -128,7 +128,7 @@ export default function Towers({ collections, setSelectedCollection, scrollToSec
                     <div className="mt-6 flex items-center justify-between gap-3">
                       <button
                         onClick={() => setSelectedCollection(col)}
-                        className="flex-1 py-3 rounded-full bg-orange-500 text-white text-[10px] uppercase tracking-[0.26em] font-bold hover:bg-orange-600 transition-all shadow-[0_0_20px_rgba(255,87,34,0.25)]"
+                        className="flex-1 py-3 rounded-full bg-red-500 text-white text-[10px] uppercase tracking-[0.26em] font-bold hover:bg-red-600 transition-all shadow-[0_0_20px_rgba(239,68,68,0.25)]"
                       >
                         View Details
                       </button>
