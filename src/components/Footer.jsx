@@ -8,7 +8,7 @@ export default function Footer({
   setShowTerms
 }) {
   return (
-    <footer className="py-20 border-t border-white/10">
+    <footer className="bg-black py-20 border-t border-white/10">
       <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-3 gap-12 items-start">
         <div className="space-y-6">
           <div className="flex items-center gap-3">

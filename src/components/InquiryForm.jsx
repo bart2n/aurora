@@ -21,7 +21,7 @@ export default function InquiryForm({
       <div className="max-w-4xl mx-auto bg-white/5 border border-red-500/10 rounded-[40px] p-8 md:p-16 relative z-10 overflow-hidden shadow-[0_0_100px_rgba(239,68,68,0.03)] backdrop-blur-sm">
         <div className="relative z-10">
           <SectionHeading
-            subtitle="Secure Your Place"
+            subtitle="Secure Your Placee"
             title="Inquire for Mastery"
             light
           />
