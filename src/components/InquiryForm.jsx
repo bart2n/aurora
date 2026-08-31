@@ -67,7 +67,7 @@ export default function InquiryForm({
           >
             <div className="space-y-1">
               <label className="text-[10px] uppercase tracking-[0.3em] text-red-500/40 ml-1">
-                Full Namee
+                Full Name
               </label>
               <input
                 required
